@@ -3,12 +3,11 @@
 const anymatch = require('anymatch');
 const flatten = require('flatten-brunch-map');
 const resolve = require('path').resolve;
-const buble = require('./src/bublejs');
+const buble = require('buble');
 
 const reIgnore = /\b(?:bower_components|node_modules|vendor)\//;
 
 const dup = (src) => Object.assign({}, src);
-
 
 class BublePlugin {
 
@@ -43,8 +42,8 @@ class BublePlugin {
       opts.source = file.path;
       try {
         const output = buble.transform(file.data, opts);
-        const result = flatten(file,
-                      output.code, opts.sourceMap ? output.map : false);
+        const result = opts.sourceMap
+                     ? flatten(file, output.code, output.map) : output.code;
 
         resolve(result);
 
