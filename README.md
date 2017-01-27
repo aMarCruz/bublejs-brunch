@@ -1,20 +1,24 @@
 > ## 🚧 This Plugin Is Depreacted 🚧
 
-> This plugin is deprecated in favor of [buble-brunch](https://github.com/roperzh/buble-brunch).
-
-# bublejs-brunch
+> This plugin is deprecated in favor of [buble-brunch](https://github.com/brunch/buble-brunch).
 
 [![npm][npm-image]][npm-url]
 [![License][license-image]][license-url]
 
+# bublejs-brunch
+
 Adds support to [Brunch](http://brunch.io) to transform ES6 into ES5 with [Bublé](https://buble.surge.sh).
+
+**NOTE**
+
+See the CHANGELOG for info about the deprecation.
 
 ## Usage
 
 Installation via npm:
 
 ```bash
-npm i bublejs-brunch
+npm i bublejs-brunch -D
 ```
 
 Manual install using the GitHub URI in your `package.json`:
@@ -48,11 +52,9 @@ If you set this option, even to `""` or `"Object assign"`, the plugin does not i
 
 ### `dangerousForOf: true`
 
-That's it.
+Other options, like `target` or `dangerousTaggedTemplateString` must be set explicitly.
 
 The option `modules` is left as `false`, so Bublé generates error with the `import` and `export` keywords because Brunch does not support ES6 modules (yet).
-
-Other options, like `target` or `dangerousTaggedTemplateString` must be set explicitly.
 
 In addition to the Bublé options you can set `pattern` and `ignore`, both [anymatch](https://github.com/es128/anymatch), to include or ignore files.
 
