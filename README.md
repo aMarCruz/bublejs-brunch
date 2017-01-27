@@ -1,7 +1,11 @@
-[![npm][npm-image]][npm-url]
-[![License][license-image]][license-url]
+> ## 🚧 This Plugin Is Depreacted 🚧
+
+> This plugin is deprecated in favor of [buble-brunch](https://github.com/roperzh/buble-brunch).
 
 # bublejs-brunch
+
+[![npm][npm-image]][npm-url]
+[![License][license-image]][license-url]
 
 Adds support to [Brunch](http://brunch.io) to transform ES6 into ES5 with [Bublé](https://buble.surge.sh).
 
