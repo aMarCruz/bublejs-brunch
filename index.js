@@ -7,7 +7,7 @@ const buble = require('buble');
 
 const reIgnore = /\b(?:bower_components|node_modules|vendor)\//;
 
-const dup = (src) => Object.assign({}, src);
+const dup = src => Object.assign({}, src);
 
 class BublePlugin {
 
