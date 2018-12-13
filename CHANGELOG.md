@@ -1,6 +1,6 @@
 # buble-brunch Changes
 
-## \[2.10.2] - 2018-12-13
+## \[2.10.3] - 2018-12-13
 
 ### Fixed
 
@@ -9,6 +9,10 @@
 ### Changed
 
 - Update dependencies.
+
+## \[2.10.2] - 2018-12-13
+
+UNPUBLISHED
 
 ## \[2.8.1] - 2016-12-22
 

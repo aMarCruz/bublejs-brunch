@@ -1,6 +1,6 @@
 {
   "name": "bublejs-brunch",
-  "version": "2.10.2",
+  "version": "2.10.3",
   "description": "Adds support to transform ES6 to ES5 with Bublé to Brunch.",
   "main": "index.js",
   "license": "MIT",
