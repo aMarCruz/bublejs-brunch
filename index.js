@@ -11,7 +11,7 @@ const reIgnore = /\b(?:bower_components|node_modules|vendor)\//;
 class BublePlugin {
 
   constructor (config) {
-    const opts = dup(config.plugins && config.plugins.buble);
+    const opts = dup(config.plugins && config.plugins.buble || {});
 
     opts.sourceMap = !!config.sourceMaps &&
       opts.sourceMap !== false && opts.sourceMaps !== false;

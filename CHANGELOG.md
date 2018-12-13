@@ -2,6 +2,12 @@
 
 ## \[2.10.2] - 2018-12-13
 
+### Fixed
+
+- Avoid crash when there's no buble options.
+
+### Changed
+
 - Update dependencies.
 
 ## \[2.8.1] - 2016-12-22
